@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgb(147, 20, 153) 4%, rgba(226,51,175,1) 83%);
+}
+.title{
+    padding: 20px;
+    font-size: 25px;
+}
+.container{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 2px;
+}
+.toggle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    border: 1px solid rgb(180, 180, 180);
+    padding: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.login{
+    width: 50%;
+    padding: 5px;
+}
+.signup{
+    width: 50%;
+    padding: 5px;
+}
+
+form > .toggle >  .selected{
+    background: linear-gradient(90deg, rgb(147, 20, 153) 4%, rgba(226,51,175,1) 83%);
+    padding: 5px;
+    width: 50%;
+    border-radius: 5px;
+    color: #fff;
+}
+.form-control > .error{
+    margin-bottom: 10px;
+    color: #f64141;
+}
+
+.form-control input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 3px;
+    font-size: 15px;
+    outline: none;
+}
+input:focus{
+    border: 2px solid rgb(147, 20, 153);
+}
+
+.form > .form-control > .input-success{
+    border : 2px solid rgb(3, 188, 3);
+}
+
+button{
+    font-weight: bold;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border:none;
+    border-radius: 3px;
+    background: linear-gradient(90deg, rgb(147, 20, 153) 4%, rgba(226,51,175,1) 83%);
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.8;
+    transition: all 1s ;
+}
+.signuplink > p {
+    text-align: center;
+    font-size: 12px;
+}
+
+.signuplink > p > a{
+    text-decoration: none;
+}
+.form-control .password2{
+    display: none;
+}
+.form-control .password2 labelx{
+    display: none;
+}

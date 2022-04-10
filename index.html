@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h2 id = "title">Login Form</h2>
+        </div>
+        <form class="form" id="form">
+            <div class="toggle" id = "toggle">
+                <div class="login selected" id="login">Login</div>
+                <div class="signup" id="signup">SignUp</div>
+            </div>
+            <div class="form-control">
+                <input type="email" name="email" id="email" class="email" placeholder="Email Address">
+                <div class="error"></div>
+            </div>
+            <div class = "form-control failure">
+                <input type="password" name="password" id="password" class="password " placeholder="Password">
+                <div class="error"></div>
+            </div>
+            <div class = "form-control">
+                <input type="password" name="password2" id="password2" class="password2 " placeholder="Confirm Password">
+                <div class="error"></div>
+            </div>
+            <button type="submit" id = "submit">Submit</button>
+            <div class="signuplink"><p>Not a member? <a href="" id = 'link'>Signup now </a></p></div>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
